@@ -1,16 +1,20 @@
 {
-    "name": "laravel/sail",
-    "description": "Docker files for running a basic Laravel application.",
-    "keywords": ["laravel", "docker"],
+    "name": "startap/sail-podman",
+    "description": "Podman compatibility layer to @laravel/sail application.",
+    "keywords": ["laravel", "docker", "podman"],
     "license": "MIT",
     "support": {
-        "issues": "https://github.com/laravel/sail/issues",
-        "source": "https://github.com/laravel/sail"
+        "issues": "https://github.com/startap/sail-podman/issues",
+        "source": "https://github.com/startap/sail-podman"
     },
     "authors": [
         {
             "name": "Taylor Otwell",
             "email": "taylor@laravel.com"
+        },
+        {
+            "name": "André Paul Grandsire"
+            "email": "andre@startap.dev.br"
         }
     ],
     "require": {
