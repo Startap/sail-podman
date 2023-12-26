@@ -1,41 +1,43 @@
-<p align="center"><img src="https://github.com/laravel/sail/raw/HEAD/art/logo.svg" alt="Logo Laravel Sail"></p>
+# ⛵ Podman Sail
 
-<p align="center">
-    <a href="https://packagist.org/packages/laravel/sail">
-        <img src="https://img.shields.io/packagist/dt/laravel/sail" alt="Total Downloads">
-    </a>
-    <a href="https://packagist.org/packages/laravel/sail">
-        <img src="https://img.shields.io/packagist/v/laravel/sail" alt="Latest Stable Version">
-    </a>
-    <a href="https://packagist.org/packages/laravel/sail">
-        <img src="https://img.shields.io/packagist/l/laravel/sail" alt="License">
-    </a>
-</p>
+This is just a simple fork from Laravel Sail project, aimed to provide compatibility with Podman and Podman Composer. 
+All we did was tweak some binaries to be able to recognize Podman instead of Docker when running Sail. All the rest of source code was left untouched for now.
 
-## Introduction
+## 🛡️ Can I rely on this package? Why not Sail?
+
+Well, Sail it's very good. But they do not have plans to support Podman (see [#83](https://github.com/laravel/sail/issues/83) and [this comment](https://github.com/laravel/sail/pull/198#issuecomment-881747365) from [#198](https://github.com/laravel/sail/pull/198)). 
+We already use Podman and made a change locally on Sail binary, inside **vendor** folder. 
+
+That change got away with every new Sail update. So, to keep in track with Sail upstream changes and provide a compatibility layer with Podman, we create this package and change a few things in [bin/sail](https://github.com/Startap/sail-podman/blob/main/bin/sail) file to be able to recnognize Podman/Podman Compose as executable. 
+
+_For now, these changes are hardcoded, but we can improve it later._
+
+## 🤔 What's Laravel Sail?
 
 Sail provides a Docker powered local development experience for Laravel that is compatible with macOS, Windows (WSL2), and Linux. Other than Docker, no software or libraries are required to be installed on your local computer before using Sail. Sail's simple CLI means you can start building your Laravel application without any previous Docker experience.
 
-#### Inspiration
+📜 You can read more about it on [laravel.com/docs/sail](https://laravel.com/docs/sail) or [Laravel Sail GitHub](https://github.com/laravel/sail) repository.
 
-Laravel Sail is inspired by and derived from [Vessel](https://github.com/shipping-docker/vessel) by [Chris Fidao](https://github.com/fideloper). If you're looking for a thorough introduction to Docker, check out Chris' course: [Shipping Docker](https://serversforhackers.com/shipping-docker).
+## 📦 How to install?
 
-## Official Documentation
+You can use this package right from Packagist repository with Composer.
 
-Documentation for Sail can be found on the [Laravel website](https://laravel.com/docs/sail).
+```bash
+composer require startap/sail-podman
+```
 
-## Contributing
+### ⚠️ Compatibility note
+**Don't forget:** if you already have Laravel Sail installed, it's required that you remove it first. You can do it with Composer too:
 
-Thank you for considering contributing to Sail! You can read the contribution guide [here](.github/CONTRIBUTING.md).
+```bash
+composer remove laravel/sail
+```
 
-## Code of Conduct
+## Roadmap
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+We want to make this project active and maintaned. So a few future improvements are planned, and you can follow it's implementation here:
 
-## Security Vulnerabilities
+- [ ] Change binary name from Sail to SailPod, to fix compatiblity issues with Laravel/Sail installations
+- [ ] Think a way to encapsulate Sail package to avoid conflicts with upstream Sail
 
-Please review [our security policy](https://github.com/laravel/sail/security/policy) on how to report security vulnerabilities.
-
-## License
-
-Laravel Sail is open-sourced software licensed under the [MIT license](LICENSE.md).
+If you want to contribute, suggest a feature to our roadmap or report a bug, be welcome. It's all in this repository: issues, discussions and pull requests.
