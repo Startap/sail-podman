@@ -9,10 +9,6 @@
     },
     "authors": [
         {
-            "name": "Taylor Otwell",
-            "email": "taylor@laravel.com"
-        },
-        {
             "name": "André Paul Grandsire",
             "email": "andre@startap.dev.br"
         }
