@@ -35,9 +35,9 @@ function display_help {
     echo "${YELLOW}Usage:${NC}" >&2
     echo "  sail COMMAND [options] [arguments]"
     echo
-    echo "Unknown commands are passed to the docker-compose binary."
+    echo "Unknown commands are passed to the podman-compose binary."
     echo
-    echo "${YELLOW}docker-compose Commands:${NC}"
+    echo "${YELLOW}podman-compose Commands:${NC}"
     echo "  ${GREEN}sail up${NC}        Start the application"
     echo "  ${GREEN}sail up -d${NC}     Start the application in the background"
     echo "  ${GREEN}sail stop${NC}      Stop the application"
@@ -159,11 +159,11 @@ function sail_is_not_running {
     exit 1
 }
 
-# Define Docker Compose command prefix...
-if docker compose &> /dev/null; then
-    DOCKER_COMPOSE=(docker compose)
+# Define Podman Compose command prefix...
+if podman compose &> /dev/null; then
+    DOCKER_COMPOSE=(podman compose)
 else
-    DOCKER_COMPOSE=(docker-compose)
+    DOCKER_COMPOSE=(podman-compose)
 fi
 
 if [ -n "$SAIL_FILES" ]; then
@@ -184,9 +184,9 @@ fi
 EXEC="yes"
 
 if [ -z "$SAIL_SKIP_CHECKS" ]; then
-    # Ensure that Docker is running...
-    if ! docker info > /dev/null 2>&1; then
-        echo "${BOLD}Docker is not running.${NC}" >&2
+    # Ensure that Podman is running...
+    if ! podman info > /dev/null 2>&1; then
+        echo "${BOLD}Podman is not running.${NC}" >&2
 
         exit 1
     fi
@@ -229,8 +229,8 @@ elif [ "$1" == "bin" ]; then
         sail_is_not_running
     fi
 
-# Proxy docker-compose commands to the docker-compose binary on the application container...
-elif [ "$1" == "docker-compose" ]; then
+# Proxy podman-compose commands to the podman-compose binary on the application container...
+elif [ "$1" == "podman-compose" ]; then
     shift 1
 
     if [ "$EXEC" == "yes" ]; then
@@ -541,7 +541,7 @@ elif [ "$1" == "share" ]; then
     shift 1
 
     if [ "$EXEC" == "yes" ]; then
-        docker run --init --rm -p "$SAIL_SHARE_DASHBOARD":4040 -t beyondcodegmbh/expose-server:latest share http://host.docker.internal:"$APP_PORT" \
+        podman run --init --rm -p "$SAIL_SHARE_DASHBOARD":4040 -t beyondcodegmbh/expose-server:latest share http://host.podman.internal:"$APP_PORT" \
             --server-host="$SAIL_SHARE_SERVER_HOST" \
             --server-port="$SAIL_SHARE_SERVER_PORT" \
             --auth="$SAIL_SHARE_TOKEN" \
@@ -574,10 +574,10 @@ elif [ "$1" == "open" ]; then
         sail_is_not_running
     fi
 
-# Pass unknown commands to the "docker-compose" binary...
+# Pass unknown commands to the "podman-compose" binary...
 else
     ARGS+=("$@")
 fi
 
-# Run Docker Compose with the defined arguments...
+# Run podman Compose with the defined arguments...
 "${DOCKER_COMPOSE[@]}" "${ARGS[@]}"
