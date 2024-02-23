@@ -128,9 +128,8 @@ else
 fi
 
 # Source the ".env" file so Laravel's environment variables are available...
-# shellcheck source=/dev/null
-if [ -n "$APP_ENV" ] && [ -f ./.env."$APP_ENV" ]; then
-  source ./.env."$APP_ENV";
+if [ ! -z "$APP_ENV" ] && [ -f ./.env.$APP_ENV ]; then
+  source ./.env.$APP_ENV;
 elif [ -f ./.env ]; then
   source ./.env;
 fi
@@ -184,7 +183,7 @@ fi
 EXEC="yes"
 
 if [ -z "$SAIL_SKIP_CHECKS" ]; then
-    # Ensure that Podman is running...
+    # Ensure that podman is running...
     if ! podman info > /dev/null 2>&1; then
         echo "${BOLD}Podman is not running.${NC}" >&2
 
