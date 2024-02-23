@@ -1,6 +1,34 @@
 # Release Notes
 
-## [Unreleased](https://github.com/laravel/sail/compare/v1.26.3...1.x)
+## [Unreleased](https://github.com/laravel/sail/compare/v1.28.0...1.x)
+
+## [v1.28.0](https://github.com/laravel/sail/compare/v1.27.4...v1.28.0) - 2024-02-20
+
+* Changing pcov Directory by [@joaopalopes24](https://github.com/joaopalopes24) in https://github.com/laravel/sail/pull/670
+* add ffmpeg to support videos, when using Spatie media-library for Videos by [@negoziator](https://github.com/negoziator) in https://github.com/laravel/sail/pull/671
+
+## [v1.27.4](https://github.com/laravel/sail/compare/v1.27.3...v1.27.4) - 2024-02-08
+
+* Fix open in browser with APP_PORT by [@ijpatricio](https://github.com/ijpatricio) in https://github.com/laravel/sail/pull/663
+
+## [v1.27.3](https://github.com/laravel/sail/compare/v1.27.2...v1.27.3) - 2024-01-30
+
+* [1.x] Improves console output by [@nunomaduro](https://github.com/nunomaduro) in https://github.com/laravel/sail/pull/661
+
+## [v1.27.2](https://github.com/laravel/sail/compare/v1.27.1...v1.27.2) - 2024-01-21
+
+* Add Support for Typesense by [@jasonbosco](https://github.com/jasonbosco) in https://github.com/laravel/sail/pull/655
+* Lint sail script by [@dimitriacosta](https://github.com/dimitriacosta) in https://github.com/laravel/sail/pull/656
+* Make DB_CONNECTION replacement more robust by @taylorotwell in https://github.com/laravel/sail/commit/2276a8d9d6cfdcaad98bf67a34331d100149d5b6
+
+## [v1.27.1](https://github.com/laravel/sail/compare/v1.27.0...v1.27.1) - 2024-01-13
+
+* [1.x] [#651] Don't do anything if no phpunit files are present by [@zack6849](https://github.com/zack6849) in https://github.com/laravel/sail/pull/652
+
+## [v1.27.0](https://github.com/laravel/sail/compare/v1.26.3...v1.27.0) - 2024-01-03
+
+* [1.x] Allow easy customization of the command ran by supervisor's PHP process by [@bram-pkg](https://github.com/bram-pkg) in https://github.com/laravel/sail/pull/645
+* [1.x] Default to PHP 8.3 by [@Jubeki](https://github.com/Jubeki) in https://github.com/laravel/sail/pull/647
 
 ## [v1.26.3](https://github.com/laravel/sail/compare/v1.26.2...v1.26.3) - 2023-12-02
 
