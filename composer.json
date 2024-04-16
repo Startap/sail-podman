@@ -1,7 +1,12 @@
 {
     "name": "startap/sail-podman",
     "description": "Podman compatibility layer to @laravel/sail application.",
-    "keywords": ["laravel", "docker", "podman"],
+    "keywords": [
+        "laravel",
+        "docker",
+        "podman",
+        "sail"
+    ],
     "license": "MIT",
     "support": {
         "issues": "https://github.com/startap/sail-podman/issues",
@@ -20,6 +25,9 @@
         "illuminate/support": "^9.52.16|^10.0|^11.0",
         "symfony/console": "^6.0|^7.0",
         "symfony/yaml": "^6.0|^7.0"
+    },
+    "replace": {
+        "laravel/sail": "1.29.1"
     },
     "bin": [
         "bin/sail"
