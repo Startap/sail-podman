@@ -11,7 +11,7 @@ APP_NAME=$1
 
 podman run --rm \
     --pull=always \
-    -v "$(pwd)":/opt \
+    -v "$(pwd)":/opt:z \
     -w /opt \
     laravelsail/php83-composer:latest \
     bash -c "laravel new $APP_NAME --no-interaction && cd $APP_NAME && php ./artisan sail:install --with=mysql,redis,meilisearch,mailpit,selenium "
