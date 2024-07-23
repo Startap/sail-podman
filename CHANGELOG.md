@@ -1,6 +1,26 @@
 # Release Notes
 
-## [Unreleased](https://github.com/laravel/sail/compare/v1.29.1...1.x)
+## [Unreleased](https://github.com/laravel/sail/compare/v1.30.2...1.x)
+
+## [v1.30.2](https://github.com/laravel/sail/compare/v1.30.1...v1.30.2) - 2024-07-05
+
+* [1.x] Use Official MariaDB Healthcheck Script by [@a1383n](https://github.com/a1383n) in https://github.com/laravel/sail/pull/704
+
+## [v1.30.1](https://github.com/laravel/sail/compare/v1.30.0...v1.30.1) - 2024-07-01
+
+* Fixed undefined array key mariadb10|11 error on installation. by [@kursatcanciger](https://github.com/kursatcanciger) in https://github.com/laravel/sail/pull/703
+
+## [v1.30.0](https://github.com/laravel/sail/compare/v1.29.3...v1.30.0) - 2024-06-18
+
+* MariaDB 11 support by [@tomcoonen](https://github.com/tomcoonen) in https://github.com/laravel/sail/pull/698
+
+## [v1.29.3](https://github.com/laravel/sail/compare/v1.29.2...v1.29.3) - 2024-06-12
+
+* Fix meilisearch healthcheck gets to IPv6 instead IPv4 by [@Theprim0](https://github.com/Theprim0) in https://github.com/laravel/sail/pull/697
+
+## [v1.29.2](https://github.com/laravel/sail/compare/v1.29.1...v1.29.2) - 2024-05-16
+
+* [1.x] Install "mariadb-client" package for MariaDB users by [@staudenmeir](https://github.com/staudenmeir) in https://github.com/laravel/sail/pull/693
 
 ## [v1.29.1](https://github.com/laravel/sail/compare/v1.29.0...v1.29.1) - 2024-03-20
 
