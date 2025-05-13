@@ -1,6 +1,12 @@
 # Release Notes
 
-## [Unreleased](https://github.com/laravel/sail/compare/v1.42.0...1.x)
+## [Unreleased](https://github.com/laravel/sail/compare/v1.43.0...1.x)
+
+## [v1.43.0](https://github.com/laravel/sail/compare/v1.42.0...v1.43.0) - 2025-05-13
+
+* Fix rabbitmq volumes by [@kiani01lab](https://github.com/kiani01lab) in https://github.com/laravel/sail/pull/793
+* Add the hostname for RabbitMQ by [@kiani01lab](https://github.com/kiani01lab) in https://github.com/laravel/sail/pull/796
+* Add Laravel's official vscode extension to devcontainer stub by [@eamirgh](https://github.com/eamirgh) in https://github.com/laravel/sail/pull/797
 
 ## [v1.42.0](https://github.com/laravel/sail/compare/v1.41.1...v1.42.0) - 2025-04-29
 
