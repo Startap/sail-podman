@@ -1,6 +1,11 @@
 # Release Notes
 
-## [Unreleased](https://github.com/laravel/sail/compare/v1.43.1...1.x)
+## [Unreleased](https://github.com/laravel/sail/compare/v1.44.0...1.x)
+
+## [v1.44.0](https://github.com/laravel/sail/compare/v1.43.1...v1.44.0) - 2025-07-04
+
+* Add tests for laravel 12 and supported vers of php by [@furai](https://github.com/furai) in https://github.com/laravel/sail/pull/801
+* Feature: Allow passing in extra options to MYSQL executable by [@ipontt](https://github.com/ipontt) in https://github.com/laravel/sail/pull/805
 
 ## [v1.43.1](https://github.com/laravel/sail/compare/v1.43.0...v1.43.1) - 2025-05-19
 
