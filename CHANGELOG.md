@@ -1,6 +1,11 @@
 # Release Notes
 
-## [Unreleased](https://github.com/laravel/sail/compare/v1.44.0...1.x)
+## [Unreleased](https://github.com/laravel/sail/compare/v1.45.0...1.x)
+
+## [v1.45.0](https://github.com/laravel/sail/compare/v1.44.0...v1.45.0) - 2025-08-25
+
+* Update PostgreSQL and RabbitMQ stubs to use Alpine variants by [@alexjustesen](https://github.com/alexjustesen) in https://github.com/laravel/sail/pull/810
+* feat: Allow Laravel Sail to run Pest 4 Browser tests by [@rogerio-pereira](https://github.com/rogerio-pereira) in https://github.com/laravel/sail/pull/812
 
 ## [v1.44.0](https://github.com/laravel/sail/compare/v1.43.1...v1.44.0) - 2025-07-04
 
