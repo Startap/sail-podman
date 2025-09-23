@@ -1,6 +1,11 @@
 # Release Notes
 
-## [Unreleased](https://github.com/laravel/sail/compare/v1.45.0...1.x)
+## [Unreleased](https://github.com/laravel/sail/compare/v1.46.0...1.x)
+
+## [v1.46.0](https://github.com/laravel/sail/compare/v1.45.0...v1.46.0) - 2025-09-23
+
+* mark working directory as safe with git by [@nathanbarrett](https://github.com/nathanbarrett) in https://github.com/laravel/sail/pull/814
+* Rename `docker-compose.yml` to `compose.yaml` by [@CasEbb](https://github.com/CasEbb) in https://github.com/laravel/sail/pull/818
 
 ## [v1.45.0](https://github.com/laravel/sail/compare/v1.44.0...v1.45.0) - 2025-08-25
 
