@@ -1,6 +1,14 @@
 # Release Notes
 
-## [Unreleased](https://github.com/laravel/sail/compare/v1.46.0...1.x)
+## [Unreleased](https://github.com/laravel/sail/compare/v1.47.0...1.x)
+
+## [v1.47.0](https://github.com/laravel/sail/compare/v1.46.0...v1.47.0) - 2025-10-28
+
+* [1.x] Uncomment CLI workers on install by [@timacdonald](https://github.com/timacdonald) in https://github.com/laravel/sail/pull/821
+* Update PostgreSQL version to 18 by [@abdounikarim](https://github.com/abdounikarim) in https://github.com/laravel/sail/pull/824
+* Fix typo in PLAYWRIGHT_BROWSERS_PATH - remove space at the EOL by [@abdounikarim](https://github.com/abdounikarim) in https://github.com/laravel/sail/pull/823
+* Update phpstan to version 2 by [@abdounikarim](https://github.com/abdounikarim) in https://github.com/laravel/sail/pull/826
+* Update actions/checkout to v5 by [@abdounikarim](https://github.com/abdounikarim) in https://github.com/laravel/sail/pull/825
 
 ## [v1.46.0](https://github.com/laravel/sail/compare/v1.45.0...v1.46.0) - 2025-09-23
 
