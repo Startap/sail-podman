@@ -1,6 +1,11 @@
 # Release Notes
 
-## [Unreleased](https://github.com/laravel/sail/compare/v1.47.0...1.x)
+## [Unreleased](https://github.com/laravel/sail/compare/v1.48.0...1.x)
+
+## [v1.48.0](https://github.com/laravel/sail/compare/v1.47.0...v1.48.0) - 2025-11-09
+
+* Add rustfs service to Docker Compose and update service list by [@francoism90](https://github.com/francoism90) in https://github.com/laravel/sail/pull/822
+* Fix(sail): Correct YAML syntax in rustfs.stub healthcheck by [@jeffersonrucu](https://github.com/jeffersonrucu) in https://github.com/laravel/sail/pull/828
 
 ## [v1.47.0](https://github.com/laravel/sail/compare/v1.46.0...v1.47.0) - 2025-10-28
 
