@@ -1,6 +1,10 @@
 # Release Notes
 
-## [Unreleased](https://github.com/laravel/sail/compare/v1.48.0...1.x)
+## [Unreleased](https://github.com/laravel/sail/compare/v1.48.1...1.x)
+
+## [v1.48.1](https://github.com/laravel/sail/compare/v1.48.0...v1.48.1) - 2025-11-17
+
+* Remove notice from MySQL service about the MYSQL_EXTRA_OPTIONS env not defined by [@tonysm](https://github.com/tonysm) in https://github.com/laravel/sail/pull/830
 
 ## [v1.48.0](https://github.com/laravel/sail/compare/v1.47.0...v1.48.0) - 2025-11-09
 
