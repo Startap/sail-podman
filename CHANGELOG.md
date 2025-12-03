@@ -1,6 +1,10 @@
 # Release Notes
 
-## [Unreleased](https://github.com/laravel/sail/compare/v1.49.1...1.x)
+## [Unreleased](https://github.com/laravel/sail/compare/v1.50.0...1.x)
+
+## [v1.50.0](https://github.com/laravel/sail/compare/v1.49.1...v1.50.0) - 2025-12-03
+
+* Add PHP 8.5 Support by [@sweptsquash](https://github.com/sweptsquash) in https://github.com/laravel/sail/pull/832
 
 ## [v1.49.1](https://github.com/laravel/sail/compare/v1.49.0...v1.49.1) - 2025-12-03
 
