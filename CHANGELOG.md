@@ -1,6 +1,11 @@
 # Release Notes
 
-## [Unreleased](https://github.com/laravel/sail/compare/v1.48.1...1.x)
+## [Unreleased](https://github.com/laravel/sail/compare/v1.49.0...1.x)
+
+## [v1.49.0](https://github.com/laravel/sail/compare/v1.48.1...v1.49.0) - 2025-11-25
+
+* Update Node LTS from 22 to 24 by [@sweptsquash](https://github.com/sweptsquash) in https://github.com/laravel/sail/pull/833
+* Replace mysql/mysql-server:8.0 with mysql:8.4 by [@sweptsquash](https://github.com/sweptsquash) in https://github.com/laravel/sail/pull/834
 
 ## [v1.48.1](https://github.com/laravel/sail/compare/v1.48.0...v1.48.1) - 2025-11-17
 
