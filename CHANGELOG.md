@@ -1,6 +1,10 @@
 # Release Notes
 
-## [Unreleased](https://github.com/laravel/sail/compare/v1.49.0...1.x)
+## [Unreleased](https://github.com/laravel/sail/compare/v1.49.1...1.x)
+
+## [v1.49.1](https://github.com/laravel/sail/compare/v1.49.0...v1.49.1) - 2025-12-03
+
+* [1.x] Fix error when `MYSQL_USER` in not set by [@hafezdivandari](https://github.com/hafezdivandari) in https://github.com/laravel/sail/pull/835
 
 ## [v1.49.0](https://github.com/laravel/sail/compare/v1.48.1...v1.49.0) - 2025-11-25
 
