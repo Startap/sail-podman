@@ -1,6 +1,12 @@
 # Release Notes
 
-## [Unreleased](https://github.com/laravel/sail/compare/v1.50.0...1.x)
+## [Unreleased](https://github.com/laravel/sail/compare/v1.51.0...1.x)
+
+## [v1.51.0](https://github.com/laravel/sail/compare/v1.50.0...v1.51.0) - 2025-12-09
+
+* Fix volume path for PostgreSQL data storage by [@JulBeg](https://github.com/JulBeg) in https://github.com/laravel/sail/pull/836
+* [1.x] Enable PHP 8.5 XDebug Support by [@sweptsquash](https://github.com/sweptsquash) in https://github.com/laravel/sail/pull/837
+* [1.x] Fix AVIF support for GD by [@CasEbb](https://github.com/CasEbb) in https://github.com/laravel/sail/pull/840
 
 ## [v1.50.0](https://github.com/laravel/sail/compare/v1.49.1...v1.50.0) - 2025-12-03
 
