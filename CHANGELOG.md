@@ -1,6 +1,10 @@
 # Release Notes
 
-## [Unreleased](https://github.com/laravel/sail/compare/v1.51.0...1.x)
+## [Unreleased](https://github.com/laravel/sail/compare/v1.52.0...1.x)
+
+## [v1.52.0](https://github.com/laravel/sail/compare/v1.51.0...v1.52.0) - 2026-01-01
+
+* Replace MariaDB vendor paths with published paths in compose file by [@hosni](https://github.com/hosni) in https://github.com/laravel/sail/pull/845
 
 ## [v1.51.0](https://github.com/laravel/sail/compare/v1.50.0...v1.51.0) - 2025-12-09
 
