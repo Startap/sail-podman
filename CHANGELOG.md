@@ -1,6 +1,11 @@
 # Release Notes
 
-## [Unreleased](https://github.com/laravel/sail/compare/v1.52.0...1.x)
+## [Unreleased](https://github.com/laravel/sail/compare/v1.53.0...1.x)
+
+## [v1.53.0](https://github.com/laravel/sail/compare/v1.52.0...v1.53.0) - 2026-02-06
+
+* Switch Yarn installation to Corepack in Dockerfiles by [@arjankapteijn](https://github.com/arjankapteijn) in https://github.com/laravel/sail/pull/846
+* Supports Laravel 13 by [@crynobone](https://github.com/crynobone) in https://github.com/laravel/sail/pull/847
 
 ## [v1.52.0](https://github.com/laravel/sail/compare/v1.51.0...v1.52.0) - 2026-01-01
 
