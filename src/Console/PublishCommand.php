@@ -41,15 +41,15 @@ class PublishCommand extends Command
             $composePath,
             str_replace(
                 [
-                    './vendor/laravel/sail/runtimes/8.5',
-                    './vendor/laravel/sail/runtimes/8.4',
-                    './vendor/laravel/sail/runtimes/8.3',
-                    './vendor/laravel/sail/runtimes/8.2',
-                    './vendor/laravel/sail/runtimes/8.1',
-                    './vendor/laravel/sail/runtimes/8.0',
-                    './vendor/laravel/sail/database/mariadb',
-                    './vendor/laravel/sail/database/mysql',
-                    './vendor/laravel/sail/database/pgsql'
+                    './vendor/startap/sail-podman/runtimes/8.5',
+                    './vendor/startap/sail-podman/runtimes/8.4',
+                    './vendor/startap/sail-podman/runtimes/8.3',
+                    './vendor/startap/sail-podman/runtimes/8.2',
+                    './vendor/startap/sail-podman/runtimes/8.1',
+                    './vendor/startap/sail-podman/runtimes/8.0',
+                    './vendor/startap/sail-podman/database/mariadb',
+                    './vendor/startap/sail-podman/database/mysql',
+                    './vendor/startap/sail-podman/database/pgsql'
                 ],
                 [
                     './docker/8.5',

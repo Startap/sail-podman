@@ -9,7 +9,7 @@ pgsql:
         POSTGRES_PASSWORD: '${DB_PASSWORD:-secret}'
     volumes:
         - 'sail-pgsql:/var/lib/postgresql'
-        - './vendor/laravel/sail/database/pgsql/create-testing-database.sql:/docker-entrypoint-initdb.d/10-create-testing-database.sql'
+        - './vendor/startap/sail-podman/database/pgsql/create-testing-database.sql:/docker-entrypoint-initdb.d/10-create-testing-database.sql'
     networks:
         - sail
     healthcheck:
