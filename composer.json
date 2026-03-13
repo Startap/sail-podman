@@ -1,5 +1,6 @@
 {
     "name": "startap/sail-podman",
+    "version": "1.0.3",
     "description": "Podman compatibility layer to @laravel/sail application.",
     "keywords": [
         "laravel",
