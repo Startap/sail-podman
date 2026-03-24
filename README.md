@@ -32,6 +32,10 @@ You can use this package right from Packagist repository with Composer.
 composer require --dev startap/sail-podman
 ```
 
+### About users and permissions
+
+If you are facing an issue regarding user permissions and access file denied, try this workaround. After try it, please answer with a 👍 or 👎 so I can take action into this.
+
 ### ⚠️ Compatibility note
 
 This package is based on [laravel/sail](https://github.com/laravel/sail) package. Inside our `composer.json` we declare that our package replaces `laravel/sail` as a dev dependency.
