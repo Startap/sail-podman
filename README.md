@@ -34,7 +34,7 @@ composer require --dev startap/sail-podman
 
 ### About users and permissions
 
-If you are facing an issue regarding user permissions and access file denied, try this workaround. After try it, please answer with a 👍 or 👎 so I can take action into this.
+If you are facing an issue regarding user permissions and access file denied, try [this workaround](https://github.com/Startap/sail-podman/issues/9#issuecomment-4114829108). After try it, please answer with a 👍 or 👎 so I can take action into this.
 
 ### ⚠️ Compatibility note
 
